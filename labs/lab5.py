@@ -1,8 +1,10 @@
-import time
+import datetime
 
+userBirthday = input("Please enter your birthday (MM-DD-YYYY): ")
 
-birthDate = input('What day is your Birthday?')
-todaysDate = 8
-birthDateSeconds = 9
+#converts string to datetime object for calculation
+birthdayDate = datetime.datetime.strptime(userBirthday, '%m-%d-%Y')
 
-print('You are ' + birthDateSeconds, ' seconds old!')
+#calculates seconds from the datetime object
+secondsOld = (datetime.datetime.now() - birthdayDate).total_seconds()
+print("You are ", secondsOld, "seconds old!")
