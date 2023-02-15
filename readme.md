@@ -1,20 +1,23 @@
-# MARKDOWN EXAMPLE
+# Braiden Guy IT3038c Scripts
 
-======
+## Project 1
 
-### Welcome My App
+I created a script to calculate free space on your hard drive.
 
-======
+Install [pip](https://pip.pypa.io/en/latest/installation/):
 
-My app is so great, sometimes it works! Just download the script, add some execute permissions and run it. The results should show you a list of all of the cat pictures on your machine.
-
-```javascript
-Javascript code block to highlight whats up in my code
+Windows:
+```
+py -m ensurepip --upgrade
+```
+Linux/MacOS:
+```
+python -m ensurepip --upgrade
 ```
 
-* A single star creates a large heading
-** Two stars is less
-*** Three stars even less
-**** Four stars looks normal
+Install [psutil](https://github.com/giampaolo/psutil/blob/master/INSTALL.rst)
 
-======
+All platforms (once pip is installed):
+```
+pip install psutil
+```
