@@ -1,5 +1,13 @@
 # Braiden Guy IT3038c Scripts
 
+<<<<<<< HEAD
+=======
+## Project 2
+For project 2, I created a number guessing game using the python random module.
+The random module comes with python, so no installation is necessary.
+All you need to do is run the script and input your number.
+
+>>>>>>> 0a5f47832da6cbbcb774ca9b03d475747b990637
 ## Project 1
 
 I created a script to calculate free space on your hard drive.
