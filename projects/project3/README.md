@@ -9,7 +9,10 @@ I created this script to aid with determining these things on the fly (without h
 
 ### How it Works
 This script uses the following Python Modules:
-JSON (Comes with Python)
-Requests (pip install requests)
+- JSON (Comes with Python)
+- Requests
+``` 
+pip install requests
+```
 
-This script calls the pokeapi, which can be found at https://pokeapi.co/, to retrieve info about 2 user-selected pokemon. The name, pokedex number, types, and weaknesses of 2 pokemon are retrieved and output to the user.
+This script calls the pokeapi, which can be found at https://pokeapi.co/, to retrieve info about user-selected pokemon. The name, pokedex number, types, and weaknesses are retrieved and output to the user. The user is also given the opportunity to compare this pokemon to another.
