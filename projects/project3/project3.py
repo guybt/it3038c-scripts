@@ -34,10 +34,17 @@ print("Pokedex Number:", pokemon1_data['pokedex_number'])
 print("Types:", ", ".join(pokemon1_data['types']))
 print("Weaknesses:", ", ".join(pokemon1_data['weaknesses']))
 
-# Prompt user for Pokemon2 name then fetch/return info to user
-pokemon2 = input("\nEnter the second Pokemon name: ")
-pokemon2_data = fetch_pokemon_data(pokemon2)
-print("\nPokemon 2: " + pokemon2_data['name'])
-print("Pokedex Number:", pokemon2_data['pokedex_number'])
-print("Types:", ", ".join(pokemon2_data['types']))
-print("Weaknesses:", ", ".join(pokemon2_data['weaknesses']))
+compare = input('\nWould you like to compare this Pokemon to another Pokemon?')
+
+if compare.lower() == 'yes':
+    # Prompt user for Pokemon2 name then fetch/return info to user
+    pokemon2 = input("\nEnter the second Pokemon name: ")
+    pokemon2_data = fetch_pokemon_data(pokemon2)
+    print("\nPokemon 2: " + pokemon2_data['name'])
+    print("Pokedex Number:", pokemon2_data['pokedex_number'])
+    print("Types:", ", ".join(pokemon2_data['types']))
+    print("Weaknesses:", ", ".join(pokemon2_data['weaknesses']))
+elif compair.lower() == 'no':
+    print("Okay!")
+else:
+    print("Type yes or no")
