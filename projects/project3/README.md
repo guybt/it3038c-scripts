@@ -1,5 +1,5 @@
 # Braiden Guy IT3038c Scripts
-## Project 2
+## Project 3
 For Project 3, I wrote a python script that prompts the user for 2 Pokemon to compare (Name, Pokedex Number, Types, and Weaknesses). 
 
 ### Inspiration
