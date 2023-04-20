@@ -18,11 +18,18 @@ pip install requests
 ```
 
 ### How to use it
+<<<<<<< HEAD
 
+=======
+>>>>>>> 06da8657c0d1e30dd785ffbf53c5ef1811ad9591
 - Use git to pull the files from my github down to your local machine
 - Make sure you have python installed
 - Install the requests module (command listed above)
 - Run the project3.py file
+<<<<<<< HEAD
 - Enter the name of a Pokemon (Pikachu, Charmander, Eevee, etc)
 - View the displayed information
 - Enter y to compare to another Pokemon then repeat the last 2 steps
+=======
+- Enter the name of a Pokemon (Pikachu, Charmander, Eevee, etc) 
+>>>>>>> 06da8657c0d1e30dd785ffbf53c5ef1811ad9591
