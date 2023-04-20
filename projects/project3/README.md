@@ -7,7 +7,7 @@ As a lifelong casual Pokemon player, I thought that it would be neat if I create
 This script calls the pokeapi, which can be found at https://pokeapi.co/, to retrieve info about user-selected pokemon. The name, pokedex number, types, and weaknesses are retrieved and output to the user. The user is also given the opportunity to compare this pokemon to another.
 
 ### What you need
-Python
+Python (https://www.python.org/downloads/)
 
 This script uses the following Python Modules:
 - JSON (built-in with Python)
