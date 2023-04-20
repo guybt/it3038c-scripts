@@ -10,7 +10,7 @@ def getPokemonData(pokemon):
         return None
     else:
         data = r.json() # Saves 'r' as a JSON variable
-        name = data['name']
+        name = data['name'] 
         pokedexNumber = data['id'] 
         types = [type_data['type']['name'] for type_data in data['types']] 
         weaknesses = []
