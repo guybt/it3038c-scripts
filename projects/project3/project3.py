@@ -14,11 +14,11 @@ def getPokemonData(pokemon):
         pokedexNumber = data['id'] # Extracts the Pokedex number from 'data' as an integer
         types = [type_data['type']['name'] for type_data in data['types']] # Extracts the type(s) and saves as a list
         weaknesses = [] # Creates a list for weakness(es)
-        for type_data in data['types']:
-            r = requests.get(type_data['type']['url'])
+        for type_data in data['types']: # Might be more than 1
+            r = requests.get(type_data['type']['url']) # Sends another GET request regarding the type and saves it as a variable
             type_info = r.json()
-            for weak_to in type_info['damage_relations']['double_damage_from']:
-                weaknesses.append(weak_to['name'])
+            for weak_to in type_info['damage_relations']['double_damage_from']: # Might be more than 1
+                weaknesses.append(weak_to['name']) # Adds the weakness to the variable
         return {
             'name': name,
             'pokedex_number': pokedexNumber,
@@ -26,7 +26,7 @@ def getPokemonData(pokemon):
             'weaknesses': weaknesses
         }
 
-while True: # This loop allows the user to compare as many Pokemon as they would like
+while True: # This loop allows the user to compare as many Pokemon as they would like, in case they would like to compare multiple
     userPokemon = input("Enter the  Pokemon name: ")
     pokemonData = getPokemonData(userPokemon)
 
